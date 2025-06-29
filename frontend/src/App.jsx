@@ -2,9 +2,11 @@ import React from 'react'
 import MainRoute from './Router/MainRoute'
 
 const App = () => {
+  const isAuthenticated = false;
+    const user = null
   return (
     <div>
-      <MainRoute/>
+      <MainRoute isAuthenticated={isAuthenticated} user={user} />
     </div>
   )
 }
