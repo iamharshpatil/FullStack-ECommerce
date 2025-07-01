@@ -1,7 +1,6 @@
 import CommonForm from "@/components/common/form";
 import { loginFormControls } from "@/config";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 const initialState = {

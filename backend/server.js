@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
+const authRoutes = require("./routes/auth/auth-routes");
 
 dotenv.config();
 
@@ -36,6 +37,7 @@ app.use(
 
 app.use(express.json());
 app.use(cookieParser());
+app.use("/api/auth", authRoutes);
 
 
 app.listen(port, () => {
